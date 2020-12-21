@@ -11,6 +11,9 @@ def main():
     print(f'Task 2.1: list sorting by last name\n{list_sorting(data[1:], 1) = }')
     print(f'Task 2.2: age > 22\n{[x for x in data[1:] if int(x[2]) >= 22] = }')
     print(f'Task 2.3: writing in csv\n{fp.write_csv(data, "test.csv") = }')
-
+    print(f'Task 2.3: writing in csv\n{fp.write_csv(data, "test.csv") = }')
+    data.append(['11', 'Воронов Василий Евгеньевич', '173', 'БДО-123'])
+    fp.write_csv(data, "students_changed.csv")
+    print(f'Task 2.4: writing in csv changed data\n{data = }')
 if __name__ == '__main__':
     main()
