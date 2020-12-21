@@ -1,6 +1,6 @@
-from files import get_files_count
-from file import FileProcessing
-from file import list_sorting
+from task2 import get_files_count
+from task3 import FileProcessing
+from task3 import list_sorting
 
 
 def main():
